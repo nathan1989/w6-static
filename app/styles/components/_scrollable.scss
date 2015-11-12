@@ -1,0 +1,36 @@
+.ns-scrollable-wrap {
+	border: 1px solid $utility-scrollable-box-border;
+	border-bottom-width: 0;
+	@media(min-width: $breakpoint-medium){
+		border-bottom-width: 1px; 
+	}
+	h4 {
+		margin: 0;
+		padding: 15px $utility-scrollable-box-padding;
+		border-bottom: 1px solid $utility-scrollable-box-border;
+	}
+	.uk-scrollable-box {
+		border: 0;
+		padding: 0;
+		resize: none;	
+		height: auto;
+		@media(min-width: $breakpoint-medium){
+			height: $utility-scrollable-box-height;
+		}
+		li {
+			border-bottom: 1px solid $utility-scrollable-box-border;
+			// Only show the first three articles on smaller screen
+			&:nth-child(n+4){
+				display: none;
+				@media(min-width: $breakpoint-medium){
+					display: block;
+				}
+			}
+		}	
+		a {
+			font-family: $base-body-font-family;
+			color: $base-link-color;
+			padding: $utility-scrollable-box-padding;
+		}
+	}
+}

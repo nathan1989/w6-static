@@ -1,0 +1,193 @@
+// html and body
+html {
+	background: $html-bg;
+}
+body {
+	background: #fff;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+// If using old IE
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// Titles for screen readers
+.ns-sr-only {
+	@include element-invisible();
+}
+
+// Clear floats
+.ns-clear {
+	clear: both;
+}
+
+// box size all the things
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+// transitions
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+a,
+img,
+button {
+	transition: all 300ms ease-out;
+}
+
+// links
+a {
+	// font-family: $bliss-bold;
+	&:hover img {
+		opacity: $image-opacity;
+	}
+}
+
+// text that looks like links
+.uk-link {
+	cursor: default;
+	// headings that look like links
+	&.uk-h4 {
+		color: $base-link-color;
+		font-size: 16px;
+		line-height: 16px;
+	}
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $base-link-color;
+	}
+}
+
+// images
+img {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden; // fix for image moving on hover, for Chrome
+}
+
+
+// forms
+:focus {
+	outline: 0;
+}
+
+// headings
+h1,
+h2,
+h3,
+h4 {
+	a {
+		color: $base-heading-color;
+		&:hover {
+			color: $base-link-hover-color;
+			text-decoration: none;
+		}
+	}
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6 {
+	display: block;
+	font-family: $base-heading-font-family;
+	color: $base-heading-color;
+	margin: 0 0 $base-margin-vertical 0;
+}
+
+// bold
+strong,
+b {
+	font-family: $bliss-bold;
+	font-weight: normal;
+}
+
+// description lists
+dt {
+	font-weight: normal;
+	font-family: $bliss-bold;
+}
+
+// italic text
+em {
+	font-family: $bliss-italic;
+}
+
+// buttons
+.uk-button {
+	border: 1px solid #f5f3f5;
+	padding: 5px 15px;
+	font-family: $bliss-bold;
+	&:hover,
+	&:focus {
+		border-color: $base-link-hover-color;
+	}
+}
+
+// sibling elements
+* + h1, 
+* + h2, 
+* + h3, 
+* + h4, 
+* + h5, 
+* + h6,
+* + p, 
+* + ul, 
+* + ol, 
+* + dl, 
+* + blockquote, 
+* + pre, 
+* + address, 
+* + fieldset, 
+* + figure {
+	margin-top: 0;
+}
+
+// embedded stuff
+iframe,
+embed, 
+video {
+	max-width: 100%;
+	margin-bottom: $base-margin-vertical;
+}
+
+// dropdowns
+.uk-dropdown {
+	border: 1px solid $light-grey;
+	padding: 10px;
+}
+
+.uk-dropdown-small {
+	min-width: 100%;
+}
+
+// flex fix for ios
+.uk-grid {
+	flex-wrap: inherit;
+	display: block;
+}
+
+// 404 page
+.ns-single-page-not-found {
+	min-height: 500px;
+}
+
+// touch fix for ios
+.uk-touch body {
+	@media(max-width: $breakpoint-medium){
+		cursor: pointer;
+	}
+}

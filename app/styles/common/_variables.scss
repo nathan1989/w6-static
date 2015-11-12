@@ -1,0 +1,137 @@
+// fonts
+$icon-font-path: "fonts";
+$bliss-regular: 'bliss-regular', Arial;
+$bliss-bold: 'bliss-bold', Arial;
+$bliss-medium: 'bliss-medium', Arial;
+$bliss-light: 'bliss-light', Arial;
+$bliss-italic: 'bliss-italic', Arial;
+
+// paths
+$image-path: '../images/';
+
+// colours
+$html-bg: #fff;
+$light-grey: #F5F3F5;
+$subheading-grey: #545C55;
+$sunrise-orange: #CA4D26;
+$required: #f8e3df;
+$breaking: #E12219;
+
+// body
+$base-body-font-family: $bliss-regular;
+$base-body-font-size: 17px;
+$base-body-line-height: 22px;
+$base-em-color: #545C55;
+
+// container
+$utility-container-padding-horizontal: 10px;
+$utility-container-padding-horizontal-large: 25px;
+$utility-container-max-width: 1035px;
+$utility-container-large-max-width: $utility-container-max-width;
+
+// headings
+$base-heading-font-family: $bliss-bold;
+$base-heading-color: #231F20;
+$base-margin-vertical: 15px;
+$base-h2-font-size:  30px;
+$base-h2-line-height: 30px;
+$base-h3-font-size: 18px;
+$base-h3-line-height: 22px;
+$base-h4-font-size:  17px;
+$base-h4-line-height: 22px;
+$utility-heading-large-font-size: 48px;
+$utility-heading-large-line-height: 48px;
+
+// links
+$base-link-color: #007BB9;
+$base-link-hover-color: #0065A4;
+
+// images
+$image-opacity: .8;
+
+// text
+$text-primary-color: #2d7091; // DONT REMOVE THIS VARIABLE, IT WILL BREAK THINGS
+
+// main nav
+$navbar-nav-font-size: 16px;
+$navbar-nav-height: 40px;
+$navbar-nav-font-family: $bliss-bold;
+$navbar-background: 0;
+$navbar-nav-color: $base-link-color;
+$navbar-nav-active-background: initial;
+$navbar-nav-hover-background: transparent;
+$navbar-nav-active-color: #000;
+$navbar-nav-onclick-background: 0;
+$navbar-nav-onclick-color: $base-link-color;
+
+// scrollable box
+$utility-scrollable-box-height: 309px;
+$utility-scrollable-box-border-width: 0;
+$utility-scrollable-box-border: #E5E7E9;
+
+// grids
+$grid-gutter-horizontal: 20px;
+$grid-gutter-vertical: 20px;
+
+// thumbnails (article box with optional image)
+$thumbnail-padding: 0;
+$thumbnail-border-width: 0;
+$thumbnail-background: #f5f3f5;
+$thumbnail-hover-background: $thumbnail-background;
+$thumbnail-caption-color: inherit;
+$thumbnail-custom-padding: 15px;
+
+// buttons
+$button-background: #fff;
+$base-body-color: #444;
+$button-hover-background: $button-background;
+$button-color: $base-link-color;
+$button-hover-color: $base-link-hover-color;
+
+// forms
+$form-height: 35px;
+$form-placeholder-color: #989999;
+$form-advanced-checked-color: $base-link-color;
+$form-advanced-border: #757575;
+$form-advanced-size: 12px;
+
+// breadcrumbs
+$breadcrumb-divider: '>';
+$breadcrumb-disabled-color: $navbar-nav-active-color;
+
+// blockquote
+$base-blockquote-padding-left: 0;
+$base-blockquote-border: transparent;
+$base-blockquote-border-width: 0;
+$base-blockquote-font-size: 17px;
+$base-blockquote-font-style: normal;
+
+// description lists
+$description-list-horizontal-width: 145px;
+$description-list-horizontal-margin-left: 155px;
+
+// pagination
+$pagination-margin-left: 2px;
+$pagination-background: transparent;
+$pagination-color: $base-link-color;
+$pagination-hover-background: transparent;
+$pagination-hover-color: $navbar-nav-active-color;
+$pagination-onclick-background: transparent;
+$pagination-onclick-color: $navbar-nav-active-color;
+$pagination-active-background: transparent;
+$pagination-active-color: $navbar-nav-active-color;
+$pagination-disabled-background: transparent;
+$pagination-disabled-color: #999;
+
+// progress
+$progress-bar-background: $base-link-color;
+
+// dropdown
+$dropdown-background: #fff;
+
+// slider
+$slidenav-position-previous: -10px;
+$slidenav-position-next: -10px;
+$slidenav-contrast-color: #fff;
+$slidenav-contrast-hover-color: #fff;
+$slidenav-contrast-active-color: #fff;

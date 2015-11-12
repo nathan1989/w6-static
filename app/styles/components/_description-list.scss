@@ -1,0 +1,40 @@
+.ns-dl-wrap {
+	border-top: 1px solid $light-grey;
+	margin-bottom: 30px;
+	margin-left: -$utility-container-padding-horizontal;
+	margin-right: -$utility-container-padding-horizontal;
+	@media(min-width: $breakpoint-small){
+		margin-left: 0; 
+		margin-right: 0; 
+	}
+	.uk-description-list-horizontal {
+		border-bottom: 1px solid $light-grey;		
+		overflow: inherit;
+		word-break: break-word;
+		margin: 0;
+	}
+	dt,
+	dd {
+		padding: 7px 0;
+	}
+	dd {
+		p {
+			margin-bottom: 0;
+			& + p {
+				margin-top: 5px; 
+			}
+		}		
+	}
+	.uk-icon-calendar {
+		&:before {
+			// custom image goes here
+			content: '';
+			display: inline-block;
+			@include sprite-image('site-sprite', 478px, 324px);
+			background-position: 0 -301px;
+			height: 23px;
+			width: 23px;
+			vertical-align: sub;
+		}
+	}
+}

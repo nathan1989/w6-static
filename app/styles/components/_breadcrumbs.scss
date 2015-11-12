@@ -1,0 +1,27 @@
+.ns-breadcrumbs {
+	padding: 20px 10px;
+	border-bottom: 2px solid $light-grey;
+	margin-bottom: 20px;
+	@media(min-width: $breakpoint-medium){
+		margin-bottom: 60px;
+	}
+	
+	// break words on smaller screens
+	@media(max-width: $breakpoint-medium){
+		.uk-breadcrumb {			
+			> li, 
+			> li > a, 
+			> li > span,
+			li:before, 
+			> li:after {
+				display: inline;
+			}
+		}
+	}
+	.uk-list {
+		margin-bottom: 0;
+	}
+	.uk-active {
+		font-family: $bliss-bold;
+	}
+}

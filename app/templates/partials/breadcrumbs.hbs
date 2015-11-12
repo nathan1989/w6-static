@@ -1,0 +1,8 @@
+<header class="ns-breadcrumbs">
+  <h2 class="ns-sr-only">Breadcrumb navigation</h2>
+  <ul class="uk-container uk-container-center uk-list uk-breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      {{#if category}}<li><a href="{{lowercase category}}.html">{{category}}</a></li>{{/if}}
+      <li class="uk-active"><span>{{heading}}</span></li>
+  </ul>
+</header>

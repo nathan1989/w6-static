@@ -1,0 +1,10 @@
+{
+  "name": "ac-ourakl",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2",
+    "slick-carousel": "~1.5.8",
+    "uikit": "~2.21.0"
+  }
+}

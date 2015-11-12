@@ -1,0 +1,234 @@
+.ns-nav-wrap {
+	position: relative;
+	padding: 0;
+	border-bottom: 2px solid $light-grey;
+	margin-bottom: 5px;
+	@media(min-width: $breakpoint-medium){
+		padding: 0 $utility-container-padding-horizontal-large;
+		border-bottom: 0;
+	}
+}
+.ns-main-nav {
+	clear: both;
+	position: relative;
+	padding: 0 $utility-container-padding-horizontal;
+	@media(min-width: $breakpoint-medium){
+		float: left;
+		padding: 0;
+	}
+	.uk-navbar-nav {
+		float: none;
+		display: none;
+		&.active {
+			display: block;
+		}
+		@media(min-width: $breakpoint-medium){
+			display: block;
+		}
+		> li {
+			float: none;
+			display: block;
+			@media(min-width: $breakpoint-medium){
+				float: left;
+			}
+		}
+	}
+	li > a {		
+		@media(min-width: $breakpoint-medium){
+			line-height: 50px;
+		}
+	}
+	// .uk-active a,
+	a:hover {
+		&:before {
+			border: 3px solid #E6E7E8;
+			position: absolute;
+			top: 0;
+			left: 15%;
+			right: 15%;
+			@media(min-width: $breakpoint-medium){
+				content: '';
+			}
+		}
+	}
+	.uk-active a {
+		cursor: default;
+		&:before {
+			display: none;
+		}
+	}
+	a:hover {
+		color: $base-body-color;
+	}
+}
+
+// toggle buttons on mobile
+.ns-button-wrap {
+	padding: 4px 0;
+	.uk-button {
+		border-top: 0;
+		border-bottom: 0;
+		&:hover,
+		&:focus {
+			border-color: $light-grey;
+		}
+	}
+}
+
+// toggle these elements on mobile
+.uk-navbar-nav,
+.ns-search-form {
+	position: absolute;
+	top: 54px;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	background: #fff;
+	box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.5);
+
+	@media (min-width: $breakpoint-medium) {
+		position: relative;
+		top: inherit;
+		left: inherit;
+		right: inherit;
+		box-shadow: none;
+	}
+}
+
+// search form wrapper
+.ns-search-form {
+	display: none;
+	&.active {
+		display: block;
+	}
+	@media(min-width: $breakpoint-medium){
+		display: block;
+	}
+	.ns-search-field {
+		margin: 10px auto;
+		display: block;
+		width: 95%;
+		// Hide placeholder on larger screens
+		@media(min-width: $breakpoint-medium){
+			&::-webkit-input-placeholder {
+			   color: transparent;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: transparent;  
+			}
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: transparent;  
+			}
+			&:-ms-input-placeholder {  
+			   color: transparent;  
+			}
+		}
+	}
+	.ns-search-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 30px;
+		width: 30px;
+		background: none;
+		border: 0;
+		font-size: 20px;
+		color: $base-link-color;
+		cursor: pointer;
+	}
+	@media (min-width: $breakpoint-medium) {
+		float: right;
+		margin-top: 10px;
+		height: $navbar-nav-height;
+		width: $ns-grid-small-width;
+		&.ng-hide:not(.ng-hide-animate){
+			display: block!important; // needed to override Angular class
+		}
+		.ns-search-field {
+			margin: 0 auto;
+			width: inherit;
+			padding-right: 30px;
+		}
+	}
+}
+
+// location toggle button
+.ns-location-link {
+	border-top: 1px solid $light-grey;
+	&:before {
+		display: none;
+		height: 0;
+		border: 0;
+	}
+	.uk-icon-location-arrow {
+		color: #68656f;
+		margin-right: 5px;
+	}
+	.uk-icon-angle-down {
+		margin-left: 5px;
+	}
+}
+
+// location list
+.ns-location-dd {
+    background-color: #FFF;
+    font-family: $bliss-bold;
+	font-size: $navbar-nav-font-size;
+    color: $base-link-color;
+    padding: 15px 5px;
+	border-top: 1px solid $light-grey;
+    display: none;
+    &.active {
+		display: block;
+    }
+	@media(min-width: $breakpoint-medium){
+		position: absolute;
+	    top: 55px;
+	    left: 0;
+	    z-index: 2;
+		border-top-width: 2px;
+	    min-width: 195px;	    
+	    box-shadow: 3px 6px 10px rgba(0,0,0,.5);
+	}
+
+    li {
+    	padding: 5px 10px;
+    	i {
+    		color: #68656f;
+    	}
+    	// &:hover {
+    	// 	input[type=radio]:checked + label {
+    	// 		color: #68656f;
+    	// 		i {
+    	// 			color: $base-link-color;
+    	// 		}
+    	// 	}
+    	// }
+    }
+    input[type=radio]{
+    	position: absolute;
+    	left: -9999px;
+    	&:checked + label {
+    		color: #68656f;
+	    	i:before {
+	    		content: '\f00c';
+    			color: $base-link-color;
+	    	}
+    	}
+    }
+    label {
+    	cursor: pointer;
+	    position: relative;
+	    padding-left: 20px;
+	    display: block;
+    	&:hover,
+    	&:hover i {
+			color: $base-link-hover-color;
+    	}
+    }
+    i {
+    	position: absolute;
+    	left: 0;
+    	top: 2px;
+    }
+}
