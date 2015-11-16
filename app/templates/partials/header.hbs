@@ -1,3 +1,24 @@
-<header class="ns-header uk-clearfix" role="banner">
-  
+<header class="ns-header uk-clearfix" data-uk-sticky="{top:-200, animation: 'uk-animation-slide-top'}" role="banner">
+  <nav class="uk-navbar">
+      <ul class="uk-navbar-nav">
+	      <li class="uk-active"><a href="">Active</a></li>
+	      <li><a href="">Item</a></li>
+	      <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
+	          <a href="">Parent</a>
+
+	          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+	              <ul class="uk-nav uk-nav-navbar">
+	                  <li><a href="#">Item</a></li>
+	                  <li><a href="#">Another item</a></li>
+	                  <li class="uk-nav-header">Header</li>
+	                  <li><a href="#">Item</a></li>
+	                  <li><a href="#">Another item</a></li>
+	                  <li class="uk-nav-divider"></li>
+	                  <li><a href="#">Separated item</a></li>
+	              </ul>
+	          </div>
+
+	      </li>
+	  </ul>
+  </nav>
 </header>
