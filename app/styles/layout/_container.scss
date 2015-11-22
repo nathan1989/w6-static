@@ -4,6 +4,16 @@
   }
 }
 
+.ns-home-image {
+	.uk-position-cover {
+		font-family: $tangerine;
+		font-size: 60px;
+		@media(min-width: $breakpoint-medium){
+			font-size: 100px;				
+		}
+	}
+}
+
 .ns-us-intro {
 	background: url(http://lorempixel.com/1920/1280/) 0 0 no-repeat;
 	height: 600px;
