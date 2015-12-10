@@ -1,6 +1,7 @@
 .uk-container {
   @media(min-width: $breakpoint-medium){
-    padding: 0 $utility-container-padding-horizontal-large;
+    padding-left: $utility-container-padding-horizontal-large;
+    padding-right: $utility-container-padding-horizontal-large;
   }
 }
 

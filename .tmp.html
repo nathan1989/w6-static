@@ -21,8 +21,14 @@
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- The body of the page -->
+    
+<div class="ns-home-image uk-cover-background uk-position-relative">
+	<img src="http://lorempixel.com/1920/1280/" class="uk-responsive-width" />
+	<h1 class="uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-contrast">Text goes here</h1>
+</div>
 
-    <header class="ns-header uk-clearfix" data-uk-sticky="{top:-200, animation: 'uk-animation-slide-top'}" role="banner">
+<header class="ns-header uk-clearfix" data-uk-sticky role="banner">
   <nav class="uk-navbar">
       <ul class="uk-navbar-nav">
 	      <li class="uk-active"><a href="">Active</a></li>
@@ -44,15 +50,27 @@
 
 	      </li>
 	  </ul>
+	  <div id="clockdiv" class="ns-countdown uk-float-right">
+	    <div class="uk-float-left uk-text-center uk-margin-right">
+	      <div><small>Days</small></div>
+	      <span class="days"></span>
+	    </div>
+	    <div class="uk-float-left uk-text-center uk-margin-right">
+	      <div><small>Hours</small></div>
+	      <span class="hours"></span>
+	    </div>
+	    <div class="uk-float-left uk-text-center uk-margin-right">
+	      <div><small>Minutes</small></div>
+	      <span class="minutes"></span>
+	    </div>
+	    <div class="uk-float-left uk-text-center uk-margin-right">
+	      <div><small>Seconds</small></div>
+	      <span class="seconds"></span>
+	    </div>
+	  </div>
   </nav>
 </header>
-    
-    <!-- The body of the page -->
-    
-<div class="ns-home-image uk-cover-background uk-position-relative">
-	<img src="http://lorempixel.com/1920/1280/" />
-	<h1 class="uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-contrast">Text goes here</h1>
-</div>
+
 <div class="uk-container uk-container-center">
 	<p>Content goes here</p>
 </div>
@@ -128,14 +146,13 @@
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div class="uk-grid uk-grid-width-medium-1-4">
-    <div class="uk-padding-remove">
+<div class="ns-photo-grid uk-grid uk-grid-collapse uk-grid-width-small-1-4">
+    <div class="">
     	<div class="uk-panel uk-panel-box">
-    	    <h2>Heading</h2>
-    	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    	    <h2>Our photos</h2>
         </div>
     </div>
-    <figure class="uk-padding-remove uk-overlay uk-overlay-hover">
+    <figure class=" uk-overlay uk-overlay-hover">
     	<a href="http://lorempixel.com/800/600/animals" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/animals" class="uk-overlay-spin uk-overlay-scale" width="800" height="600" alt="">
             <div class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
@@ -145,32 +162,32 @@
             </div>
     	</a>
     </figure>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/nature" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/nature" width="800" height="600" alt="">
         </a>
     </div>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/cats" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/cats" width="800" height="600" alt="">
         </a>
     </div>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/city" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/city" width="800" height="600" alt="">
         </a>
     </div>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/abstract" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/abstract" width="800" height="600" alt="">
         </a>
     </div>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/people" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/people" width="800" height="600" alt="">
         </a>
     </div>
-    <div class="uk-padding-remove">
+    <div class="">
         <a href="http://lorempixel.com/800/600/transport" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
             <img src="http://lorempixel.com/800/600/transport" width="800" height="600" alt="">
         </a>
@@ -198,10 +215,6 @@
     <script src="../bower_components/uikit/js/components/slider.js"></script>
     <script src="../bower_components/uikit/js/components/parallax.js"></script>
     <script src="../bower_components/uikit/js/components/sticky.js"></script>
-    <script src="scripts/vendor/packery.pkgd.js"></script>
-    <script src="scripts/vendor/imagesloaded.pkgd.js"></script>
-    <script src="scripts/vendor/jquery.picture.js"></script>
-    <script src="scripts/vendor/jquery.dotdotdot.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 </body>
