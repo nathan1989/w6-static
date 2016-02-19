@@ -86,7 +86,7 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h5 {
 	a {
 		color: $base-heading-color;
 		&:hover {
@@ -96,12 +96,17 @@ h4 {
 	}
 }
 
+h4,
+h6,
+.uk-h4,
+.uk-h6  {
+	color: $light-blue;
+}
+
 .uk-h1,
 .uk-h2,
 .uk-h3,
-.uk-h4,
-.uk-h5,
-.uk-h6 {
+.uk-h5 {
 	display: block;
 	font-family: $base-heading-font-family;
 	color: $base-heading-color;
@@ -128,12 +133,18 @@ em {
 
 // buttons
 .uk-button {
-	border: 1px solid #f5f3f5;
+	border: 1px solid $light-blue;
+	color: $light-blue;
 	padding: 5px 15px;
 	font-family: $bliss-bold;
 	&:hover,
 	&:focus {
-		border-color: $base-link-hover-color;
+		border-color: #000;
+		color: #000;
+	}
+	&.uk-active {
+		background: $light-blue;
+		color: #fff;
 	}
 }
 
@@ -178,11 +189,6 @@ video {
 .uk-grid {
 	flex-wrap: inherit;
 	display: block;
-}
-
-// 404 page
-.ns-single-page-not-found {
-	min-height: 500px;
 }
 
 // touch fix for ios

@@ -1,25 +1,23 @@
-.uk-container {
-  @media(min-width: $breakpoint-medium){
-    padding-left: $utility-container-padding-horizontal-large;
-    padding-right: $utility-container-padding-horizontal-large;
-  }
-}
-
-.ns-home-image {
-	.uk-position-cover {
-		font-family: $tangerine;
-		font-size: 60px;
-		@media(min-width: $breakpoint-medium){
-			font-size: 100px;				
-		}
+.ns-generic-content {
+	&.yellow-bg {
+		background: $yellow;
+	}
+	.ns-generic-text {
+		column-count: 2;
 	}
 }
 
-.ns-us-intro {
-	background: url(http://lorempixel.com/1920/1280/) 0 0 no-repeat;
-	height: 600px;
+.uk-container {
+	padding: $utility-container-padding-horizontal;
+	@media(min-width: $breakpoint-medium){
+		padding: $utility-container-padding-horizontal-large;
+	}
 }
 
-.ns-photo-grid {
-	background: $panel-box-background;
+// home page image/slider
+.ns-home-image {
+	.uk-overlay-panel {
+		max-width: 300px;
+		top: inherit;
+	}
 }

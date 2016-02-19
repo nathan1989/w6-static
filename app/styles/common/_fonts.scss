@@ -24,7 +24,12 @@
   src: url(fonts/ACBliss-Italic.ttf);
 }
 
+// averta extra bold font
 @font-face {
-  font-family: 'tangerine';
-  src: url(fonts/Tangerine_Regular.ttf);
+  font-family: 'averta-extrabold';
+  src: url(fonts/averta-extrabold-webfont.eot); /* IE9 Compat Modes */
+  src: url(fonts/averta-extrabold-webfont.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(fonts/averta-extrabold-webfont.woff2) format('woff2'), /* Super Modern Browsers */
+       url(fonts/averta-extrabold-webfont.woff) format('woff'), /* Pretty Modern Browsers */
+       url(fonts/averta-extrabold-webfont.ttf)  format('truetype'), /* Safari, Android, iOS */
 }

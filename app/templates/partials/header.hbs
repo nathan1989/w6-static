@@ -1,57 +1,13 @@
 <header class="ns-header uk-clearfix" data-uk-sticky role="banner">
-  <nav class="uk-navbar">
+  <a href="/" class="ns-logo">Workshop 6</a>
+  <nav class="uk-navbar uk-float-right">
+  <h2 class="ns-sr-only">Main navigation</h2>
       <ul class="uk-navbar-nav">
-	      <li class="uk-parent uk-active" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
-	          <a href="#">Home</a>
-	          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
-	              <ul class="uk-nav uk-nav-navbar">
-	                  <li><a href="#">Who we are</a></li>
-	                  <li><a href="#">Our photos</a></li>
-	              </ul>
-	          </div>
-	      </li>
-	      <li><a href="#">Our beginning</a></li>	      
-	      <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
-	          <a href="/making">Making it offical</a>
-	          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
-	              <ul class="uk-nav uk-nav-navbar">
-	                  <li><a href="#">Our bridal party</a></li>
-	                  <li><a href="#">The proposal</a></li>
-	                  <li><a href="#">The engagement party</a></li>
-	                  <li><a href="#">The engagement shoot</a></li>
-	              </ul>
-	          </div>
-	      </li>      
-	      <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
-	          <a href="#">The big day</a>
-	          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
-	              <ul class="uk-nav uk-nav-navbar">
-	                  <li><a href="#">The ceremony</a></li>
-	                  <li><a href="#">The reception</a></li>
-	                  <li><a href="#">Important info</a></li>
-	                  <li><a href="#">Wedding photos</a></li>
-	                  <li><a href="#">Thank you</a></li>
-	              </ul>
-	          </div>
-	      </li>
+	      <li{{#contains basename "about"}} class="uk-active"{{/contains}}><a href="/about.html">About</a></li>
+	      <li><a href="#">Classes</a></li>
+	      <li><a href="#">Benchspace</a></li>
+	      <li><a href="#">Gallery</a></li>
+	      <li><a href="#">Blog</a></li>
 	  </ul>
-	  <div id="clockdiv" class="ns-countdown uk-float-right">
-	    <div class="uk-float-left uk-text-center uk-margin-right">
-	      <div><small>Days</small></div>
-	      <span class="days"></span>
-	    </div>
-	    <div class="uk-float-left uk-text-center uk-margin-right">
-	      <div><small>Hours</small></div>
-	      <span class="hours"></span>
-	    </div>
-	    <div class="uk-float-left uk-text-center uk-margin-right">
-	      <div><small>Minutes</small></div>
-	      <span class="minutes"></span>
-	    </div>
-	    <div class="uk-float-left uk-text-center uk-margin-right">
-	      <div><small>Seconds</small></div>
-	      <span class="seconds"></span>
-	    </div>
-	  </div>
   </nav>
 </header>
