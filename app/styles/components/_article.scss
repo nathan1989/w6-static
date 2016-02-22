@@ -2,11 +2,27 @@
 	margin-top: 40px;
 	article {
 		margin-bottom: 25px;
-		.uk-float-left {
-			margin-right: 20px;
+		.ns-article-image {
+			display: block;
+			margin: 0 auto 20px;
+			@media(min-width: $breakpoint-small){				
+				float: left;
+				margin-right: 20px;
+			}
 		}
-		.uk-float-right {
-			margin-left: 20px;
+		.ns-article-title {
+			text-align: center;
+			@media(min-width: $breakpoint-small){	
+				text-align: inherit;
+			}
+		}
+		&:nth-child(odd){
+			.ns-article-image {
+				@media(min-width: $breakpoint-small){					
+					float: right;
+					margin-left: 20px;
+				}
+			}
 		}
 	}
 }

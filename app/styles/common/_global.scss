@@ -48,7 +48,6 @@ button {
 
 // links
 a {
-	// font-family: $bliss-bold;
 	&:hover img {
 		opacity: $image-opacity;
 	}
@@ -116,14 +115,14 @@ h6,
 // bold
 strong,
 b {
-	font-family: $bliss-bold;
+	font-family: $averta-bold;
 	font-weight: normal;
 }
 
 // description lists
 dt {
 	font-weight: normal;
-	font-family: $bliss-bold;
+	font-family: $averta-bold;
 }
 
 // italic text
@@ -136,7 +135,7 @@ em {
 	border: 1px solid $light-blue;
 	color: $light-blue;
 	padding: 5px 15px;
-	font-family: $bliss-bold;
+	font-family: $averta-extrabold;
 	&:hover,
 	&:focus {
 		border-color: #000;

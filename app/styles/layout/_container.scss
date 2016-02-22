@@ -1,6 +1,23 @@
 .ns-generic-content {
+	margin: #{$triangle-height*2}px 0;
 	&.yellow-bg {
 		background: $yellow;
+		position: relative;
+		&:before,&:after {
+			content: '';
+			background: url(#{$image-path}triangle-arrow-up.svg) 0 0 no-repeat;
+			height: #{$triangle-height}px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -#{$triangle-height}px;
+			background-size: cover;
+		}
+		&:after {
+			top: inherit;
+			bottom: -#{$triangle-height}px;
+			transform: rotate(180deg);
+		}
 	}
 	.ns-generic-text {
 		column-count: 2;
@@ -11,13 +28,5 @@
 	padding: $utility-container-padding-horizontal;
 	@media(min-width: $breakpoint-medium){
 		padding: $utility-container-padding-horizontal-large;
-	}
-}
-
-// home page image/slider
-.ns-home-image {
-	.uk-overlay-panel {
-		max-width: 300px;
-		top: inherit;
 	}
 }

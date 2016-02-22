@@ -6,6 +6,8 @@ $bliss-medium: 'bliss-medium', Arial;
 $bliss-light: 'bliss-light', Arial;
 $bliss-italic: 'bliss-italic', Arial;
 $averta-extrabold: 'averta-extrabold', Arial;
+$averta-bold: 'averta-bold', Arial;
+$averta-regular: 'averta-regular', Arial;
 
 // paths
 $image-path: '../images/';
@@ -17,7 +19,7 @@ $light-blue: #248BE9;
 $yellow: #FBCD4C;
 
 // body
-$base-body-font-family: $bliss-regular;
+$base-body-font-family: $averta-regular;
 $base-body-color: #000;
 $base-body-font-size: 17px;
 $base-body-line-height: 22px;
@@ -27,10 +29,11 @@ $base-em-color: #545C55;
 $utility-container-padding-horizontal: 10px;
 $utility-container-padding-horizontal-large: 25px;
 $utility-container-max-width: 80%;
-$utility-container-large-max-width: $utility-container-max-width;
+$utility-container-large-max-width: 700px;
+$triangle-height: 30;
 
 // headings
-$base-heading-font-family: $bliss-bold;
+$base-heading-font-family: $averta-extrabold;
 $base-heading-color: #231F20;
 $base-margin-vertical: 15px;
 $base-h1-font-size:  45px;
@@ -63,7 +66,7 @@ $text-primary-color: #2d7091; // DONT REMOVE THIS VARIABLE, IT WILL BREAK THINGS
 // main nav
 $navbar-nav-font-size: 16px;
 $navbar-nav-height: 40px;
-$navbar-nav-font-family: $bliss-bold;
+$navbar-nav-font-family: $averta-bold;
 $navbar-background: transparent;
 $navbar-nav-color: $base-body-color;
 $navbar-nav-active-background: initial;

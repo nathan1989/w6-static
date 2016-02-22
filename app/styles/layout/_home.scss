@@ -1,0 +1,17 @@
+// home page image/slider
+.ns-home-image {
+	margin-bottom: -#{$triangle-height*2}px;
+	.uk-overlay-panel {
+		top: inherit;
+		position: static;
+		background: $yellow;
+		display: block;
+		color: $base-body-color;
+		@media(min-width: $breakpoint-medium){
+			position: absolute;
+			background: transparent;
+			color: #fff;
+			max-width: 300px;	
+		}
+	}
+}
