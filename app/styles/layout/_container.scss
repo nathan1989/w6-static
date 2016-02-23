@@ -1,3 +1,14 @@
+.ns-header-section {
+	& + .ns-generic-content {
+		margin-top: 0;
+	}
+}
+
+.ns-top-header {
+	background: url(#{$image-path}header-test.jpg) 0 0 no-repeat;
+	height: 200px;
+}
+
 .ns-generic-content {
 	margin: #{$triangle-height*2}px 0;
 	&.yellow-bg {
@@ -20,7 +31,9 @@
 		}
 	}
 	.ns-generic-text {
-		column-count: 2;
+		@media(min-width: $breakpoint-small){
+			column-count: 2;
+		}
 	}
 }
 

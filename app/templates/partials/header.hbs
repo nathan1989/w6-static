@@ -1,4 +1,4 @@
-<header class="ns-header uk-clearfix" data-uk-sticky role="banner">
+<header class="ns-header uk-clearfix">
   <a href="/" class="ns-logo">Workshop 6</a>
   <nav class="uk-navbar uk-float-right">
   <h2 class="ns-sr-only">Main navigation</h2>
@@ -6,7 +6,7 @@
 	      <li{{#contains basename "about"}} class="uk-active"{{/contains}}><a href="/about.html">About</a></li>
 	      <li><a href="#">Classes</a></li>
 	      <li><a href="#">Benchspace</a></li>
-	      <li><a href="#">Gallery</a></li>
+	      <li{{#contains basename "gallery"}} class="uk-active"{{/contains}}><a href="/gallery.html">Gallery</a></li>
 	      <li><a href="#">Blog</a></li>
 	  </ul>
   </nav>
