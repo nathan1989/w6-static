@@ -138,12 +138,27 @@ em {
 	font-family: $averta-extrabold;
 	&:hover,
 	&:focus {
-		border-color: #000;
-		color: #000;
+		border-color: $base-body-color;
+		color: $base-body-color;
 	}
 	&.uk-active {
 		background: $light-blue;
 		color: #fff;
+	}
+}
+
+.uk-button-primary {
+	border-color: $yellow;
+	color: $base-body-color;
+	padding: 3px 28px;
+	border-radius: 15px;
+	&:hover,
+	&:focus {
+		border-color: $yellow;
+	}
+	&.uk-active {
+		background: $yellow;
+		color: $base-body-color;
 	}
 }
 

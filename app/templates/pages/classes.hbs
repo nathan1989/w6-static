@@ -1,0 +1,34 @@
+---
+title: Classes
+---
+
+{{>header}}
+
+<section class="ns-generic-content">
+  <div class="uk-container uk-container-center">
+  	<h2>Classes</h2>
+	<!-- Filter Controls -->
+	<ul id="my-id" class="uk-subnav uk-margin-bottom">
+	    <li data-uk-filter=""><a href="#">All</a></li>
+	    <li data-uk-filter="filter-a"><a href="#">Filter A</a></li>
+	    <li data-uk-filter="filter-b"><a href="#">Filter B</a></li>
+	    <li data-uk-filter="filter-c"><a href="#">Filter C</a></li>
+	</ul>
+
+	<!-- Dynamic Grid -->
+	<div data-uk-grid="{controls: '#my-id', colwidth: '100%'}">
+	    <div data-uk-filter="filter-a">
+	    	<h3>Filter A</h3>
+	    	<div class="uk-placeholder uk-placeholder-large"></div>
+	    </div>
+	    <div data-uk-filter="filter-b">
+	    	<h3>Filter B</h3>
+	    	<div class="uk-placeholder uk-placeholder-large"></div>
+	    </div>
+	    <div data-uk-filter="filter-c">
+	    	<h3>Filter C</h3>
+	    	<div class="uk-placeholder uk-placeholder-large"></div>
+	    </div>
+	</div>  
+  </div>
+</section>

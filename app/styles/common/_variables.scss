@@ -84,3 +84,18 @@ $button-background: #fff;
 $button-hover-background: $button-background;
 $button-color: $base-link-color;
 $button-hover-color: $base-link-hover-color;
+
+// $button-primary-background:                      #00a8e6 !default;
+// $button-primary-color:                           #fff !default;
+// $button-primary-hover-background:                #35b3ee !default;
+// $button-primary-hover-color:                     #fff !default;
+// $button-primary-active-background:               #0091ca !default;
+// $button-primary-active-color: 
+
+// yellow button
+$button-primary-background: $yellow;
+$button-primary-hover-background: $button-primary-background;
+$button-primary-active-background: $button-primary-background;
+$button-primary-color: $base-body-color;
+$button-primary-hover-color: $button-primary-color;
+$button-primary-active-color: $button-primary-color;
